@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
+            if(targetId === '#' || !targetId) return;
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
@@ -21,11 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (form) {
         // Override the default inline onsubmit from Stitch
         form.removeAttribute('onsubmit');
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', (e: Event) => {
             e.preventDefault();
             
             // Simular envío de RFQ
-            const btn = form.querySelector('button[type="submit"]');
+            const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+            if (!btn) return;
+
             const originalText = btn.innerHTML;
             
             btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span> ENVIANDO...';
