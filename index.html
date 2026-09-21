@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAMESA C.A. | Ingeniería Metalmecánica &amp; Soldaduras Especiales</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed-dim": "#ffb4a4",
+            "inverse-on-surface": "#f0effc",
+            "on-secondary-fixed": "#1b1b1b",
+            "on-secondary": "#ffffff",
+            "surface": "#fbf8ff",
+            "inverse-surface": "#2f3039",
+            "on-primary-fixed": "#001257",
+            "secondary-container": "#e2e2e2",
+            "on-primary": "#ffffff",
+            "background": "#FFFFFF",
+            "on-tertiary-container": "#ffae9b",
+            "on-primary-container": "#b3bfff",
+            "on-primary-fixed-variant": "#0033c1",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "secondary-fixed-dim": "#c6c6c6",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#e2e1ee",
+            "on-tertiary-fixed-variant": "#8c1800",
+            "on-secondary-fixed-variant": "#474747",
+            "surface-container-high": "#e8e7f4",
+            "primary-fixed": "#dde1ff",
+            "surface-container-low": "#f3f2ff",
+            "on-secondary-container": "#646464",
+            "border-accent": "#E5E5E5",
+            "primary-fixed-dim": "#b9c3ff",
+            "secondary-fixed": "#e2e2e2",
+            "primary": "#00299f",
+            "inverse-primary": "#b9c3ff",
+            "outline": "#747687",
+            "on-tertiary-fixed": "#3d0600",
+            "surface-container": "#eeedf9",
+            "surface-dim": "#dad9e5",
+            "text-main": "#000000",
+            "tertiary-container": "#9b1e02",
+            "primary-container": "#003ad7",
+            "tertiary-fixed": "#ffdad3",
+            "secondary": "#5e5e5e",
+            "on-background": "#1a1b24",
+            "surface-variant": "#e2e1ee",
+            "surface-bright": "#fbf8ff",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#c4c5d8",
+            "surface-tint": "#244ce5",
+            "on-surface-variant": "#444655",
+            "on-surface": "#1a1b24",
+            "on-error-container": "#93000a",
+            "tertiary": "#721200",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0px",
+            "none": "0px",
+            "sm": "0px",
+            "md": "0px",
+            "lg": "0px",
+            "xl": "0px",
+            "full": "0px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin": "2rem",
+            "gutter": "1rem"
+          },
+          "fontFamily": {
+            "body-md": ["Inter", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "headline-md": ["Barlow Condensed", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "headline-lg": ["Barlow Condensed", "sans-serif"],
+            "headline-sm": ["Barlow Condensed", "sans-serif"],
+            "headline-xl": ["Barlow Condensed", "sans-serif"]
+          },
+          "fontSize": {
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "22px", "fontWeight": "700" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    * {
+      border-radius: 0px !important;
+      box-shadow: none !important;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .technical-grid {
+      background-size: 24px 24px;
+      background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+                        linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-background text-text-main font-body-md antialiased selection:bg-primary-container selection:text-white">
+<!-- TOP STATUS BANNER (Industrial System Status) -->
+<div class="w-full bg-black text-white text-[11px] font-label-md tracking-wider border-b border-border-accent px-space-xl py-1 flex justify-between items-center">
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 text-white">
+<span class="w-2 h-2 bg-emerald-500 inline-block"></span>
+        ESTADO: PLANTA OPERATIVA [VIGILANCIA NDT ACTIVA]
+      </span>
+<span class="text-secondary hidden md:inline">|</span>
+<span class="text-secondary-fixed-dim hidden md:inline">SISTEMA DE GESTIÓN ASME SEC. IX &amp; ISO 9001:2015</span>
+</div>
+<div class="flex items-center gap-space-lg text-secondary-fixed-dim">
+<span class="hover:text-white transition-colors cursor-pointer flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">call</span> +58 (241) 871-9200
+      </span>
+<span class="hidden sm:inline hover:text-white transition-colors cursor-pointer">PLANTA INDUSTRIAL ZONA SUR</span>
+</div>
+</div>
+<!-- COMPONENT: TopNavBar (from Shared Components JSON) -->
+<header class="w-full border-b border-border-accent dark:border-border-accent px-space-xl flex justify-between items-center h-16 bg-background sticky top-0 z-50">
+<!-- Brand Logo Anchor -->
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 bg-primary-container text-white flex items-center justify-center font-headline-md text-headline-md tracking-tighter">
+        F
+      </div>
+<div class="flex flex-col">
+<span class="text-headline-md font-headline-md tracking-widest text-text-main uppercase font-bold leading-none">
+          FAMESA C.A.
+        </span>
+<span class="text-[10px] font-label-md text-secondary tracking-widest uppercase mt-0.5">
+          INGENIERÍA INDUSTRIAL &amp; SOLDADURAS
+        </span>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center h-full gap-space-lg">
+<a class="text-primary-container border-b-2 border-primary-container font-semibold py-4 text-label-md font-label-md uppercase tracking-tight" href="#servicios">
+        SERVICIOS
+      </a>
+<a class="text-text-main py-4 hover:text-primary-container transition-colors text-label-md font-label-md uppercase tracking-tight" href="#certificaciones">
+        CERTIFICACIONES
+      </a>
+<a class="text-text-main py-4 hover:text-primary-container transition-colors text-label-md font-label-md uppercase tracking-tight" href="#capacidades">
+        CAPACIDADES
+      </a>
+<a class="text-text-main py-4 hover:text-primary-container transition-colors text-label-md font-label-md uppercase tracking-tight" href="#catalogo">
+        CATÁLOGO
+      </a>
+<a class="text-text-main py-4 hover:text-primary-container transition-colors text-label-md font-label-md uppercase tracking-tight" href="#contacto">
+        CONTACTO
+      </a>
+</nav>
+<!-- Trailing Actions Cluster -->
+<div class="flex items-center gap-space-md">
+<a class="hidden sm:flex items-center gap-1.5 px-3 py-2 border border-border-accent hover:bg-surface-container-low transition-colors text-label-md font-label-md uppercase text-secondary" href="#catalogo-pdf">
+<span class="material-symbols-outlined text-[16px] text-primary-container">picture_as_pdf</span>
+<span class="hidden xl:inline">DOSSIER</span>
+</a>
+<a class="px-space-md py-2.5 bg-primary-container text-white text-label-md font-label-md uppercase font-semibold tracking-wider hover:bg-primary transition-colors flex items-center gap-2" href="#contacto">
+<span class="material-symbols-outlined text-[16px]">request_quote</span>
+        SOLICITAR COTIZACIÓN
+      </a>
+</div>
+</header>
+<!-- HERO SECTION: Industrial Precision & Technical Authority -->
+<section class="w-full border-b border-border-accent technical-grid bg-background relative overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-space-xl py-12 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+<!-- Hero Left: Technical Messaging -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 border border-border-accent bg-surface-container-lowest px-3 py-1 mb-6 self-start">
+<span class="w-2 h-2 bg-primary-container inline-block"></span>
+<span class="text-[11px] font-label-md tracking-widest uppercase text-text-main">DIVISIÓN METALMECÁNICA PESADA &amp; NDT</span>
+</div>
+<h1 class="text-headline-xl font-headline-xl uppercase text-text-main tracking-tight leading-[1.05] mb-6">
+          INGENIERÍA METALMECÁNICA Y SOLDADURAS ESPECIALES
+        </h1>
+<p class="text-body-lg font-body-lg text-secondary max-w-2xl mb-8 leading-relaxed">
+          Soluciones integrales de fabricación pesada, recipientes a presión y soldadura de alta aleación bajo normativas internacionales para el sector petrolero, minero y manufacturero.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+<a class="px-6 py-4 bg-primary-container text-white font-label-md text-label-md uppercase tracking-wider font-semibold text-center hover:bg-primary transition-colors flex items-center justify-center gap-3" href="#contacto">
+<span>SOLICITAR COTIZACIÓN TÉCNICA</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="px-6 py-4 bg-transparent border border-text-main text-text-main font-label-md text-label-md uppercase tracking-wider font-semibold text-center hover:bg-surface-container-low transition-colors flex items-center justify-center gap-3" href="#catalogo">
+<span class="material-symbols-outlined text-[18px] text-primary-container">picture_as_pdf</span>
+<span>DESCARGAR DOSSIER / CATÁLOGO TÉCNICO (PDF)</span>
+</a>
+</div>
+<!-- Micro Technical Spec Bar -->
+<div class="grid grid-cols-3 border-t border-b border-border-accent py-3 text-left">
+<div class="border-r border-border-accent pr-4">
+<span class="block text-[10px] font-label-md text-secondary uppercase">CALIFICACIÓN WPS</span>
+<span class="font-headline-sm text-headline-sm text-text-main tracking-tight">ASME IX / AWS</span>
+</div>
+<div class="border-r border-border-accent px-4">
+<span class="block text-[10px] font-label-md text-secondary uppercase">CONTROL DE CALIDAD</span>
+<span class="font-headline-sm text-headline-sm text-text-main tracking-tight">100% NDT LEVEL II/III</span>
+</div>
+<div class="pl-4">
+<span class="block text-[10px] font-label-md text-secondary uppercase">DISPONIBILIDAD</span>
+<span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">24/7 PLANTA &amp; CAMPO</span>
+</div>
+</div>
+</div>
+<!-- Hero Right: Industrial Plant Imagery & Blueprint Overlay -->
+<div class="lg:col-span-5 flex flex-col border border-border-accent bg-surface-container-lowest relative">
+<div class="border-b border-border-accent px-4 py-2 bg-surface-container-low flex justify-between items-center text-[11px] font-label-md text-secondary">
+<span class="uppercase tracking-wider">ARCHIVO TÉCNICO: REF-WELD-2024-V2</span>
+<span class="text-primary-container font-mono">SPEC: ASME SEC. VIII / IX</span>
+</div>
+<div class="relative w-full h-80 sm:h-96 lg:h-full min-h-[340px] overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="A specialized industrial welder working inside a modern heavy manufacturing plant wearing complete protective equipment and helmet. Intense welding arcs create bright sparks illuminating high-grade stainless steel pressure vessel pipes. The composition is clean, architectural, and sharp with cool metallic blues, crisp deep blacks, and industrial concrete textures emphasizing precision engineering and uncompromising quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANgPWSulFzNJSaJdd-dZdZ2VhDljKcYFOhATvQdurr5Z7zkIEYEk9yWt4Zx6ghu14Guk2KRnKEQDnyd2gexlmRu9H9rt01btOCsFryVITvrrPZ44VW6-7CYHi4GuJnKipG03drpNpXTPLphqj4g_9_ZD6kJwvUHMP9HIiCAD3K_ts9sSCbQlLs9j4Q9CmirQJehdQ9PCgPAb5fJals5uUWaJGKR85y1utbHyr0P6He-ENHtUReWtQDDUbQ3mte7gDa48cC23Bgc44"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply pointer-events-none"></div>
+<!-- Engineering Overlay Coordinates -->
+<div class="absolute bottom-3 left-3 bg-black/85 text-white px-3 py-1.5 text-[11px] font-mono border border-border-accent flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-emerald-400"></span>
+<span>PROCESO: GTAW / 316L / 6G WELD IN PROGRESS</span>
+</div>
+</div>
+<div class="p-4 border-t border-border-accent bg-background grid grid-cols-2 gap-2 text-[11px] font-label-md uppercase">
+<div class="text-secondary">TOLERANCIA DIMENSIONAL: <span class="text-text-main font-semibold">± 0.5 MM</span></div>
+<div class="text-secondary">CONTROL TÉRMICO: <span class="text-text-main font-semibold">INTERPASS REGULADO</span></div>
+</div>
+</div>
+</div>
+<!-- TECHNICAL STATS STRIP -->
+<div class="w-full border-t border-border-accent bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border-accent">
+<div class="p-6 md:p-8 flex flex-col justify-center">
+<span class="text-headline-xl font-headline-xl text-primary-container leading-none mb-1">+28</span>
+<span class="text-label-md font-label-md uppercase tracking-tight text-text-main">AÑOS DE TRAYECTORIA INDUSTRIAL</span>
+<span class="text-body-sm font-body-sm text-secondary mt-1">Servicio continuo al sector petroquímico y siderúrgico.</span>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-center">
+<span class="text-headline-xl font-headline-xl text-primary-container leading-none mb-1">100%</span>
+<span class="text-label-md font-label-md uppercase tracking-tight text-text-main">CUMPLIMIENTO DE NORMAS ASME / AWS</span>
+<span class="text-body-sm font-body-sm text-secondary mt-1">Procedimientos WPS y PQR certificados y auditados.</span>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-center">
+<span class="text-headline-xl font-headline-xl text-primary-container leading-none mb-1">0%</span>
+<span class="text-label-md font-label-md uppercase tracking-tight text-text-main">FALLAS EN ENSAYOS NO DESTRUCTIVOS</span>
+<span class="text-body-sm font-body-sm text-secondary mt-1">Trazabilidad completa con ultrasonido y radiografía industrial.</span>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-center">
+<span class="text-headline-xl font-headline-xl text-primary-container leading-none mb-1">+1,500</span>
+<span class="text-label-md font-label-md uppercase tracking-tight text-text-main">TONELADAS FABRICADAS ANUALES</span>
+<span class="text-body-sm font-body-sm text-secondary mt-1">Capacidad instalada en naves de ensamblaje pesado.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- BARRA DE CERTIFICACIONES TÉCNICAS (ASME & AWS CERTIFIED) -->
+<section class="w-full border-b border-border-accent bg-surface-container-low py-8" id="certificaciones">
+<div class="max-w-[1440px] mx-auto px-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<div>
+<span class="text-[11px] font-label-md tracking-widest uppercase text-primary-container font-semibold">SISTEMA INTEGRAL DE CALIDAD</span>
+<h2 class="text-headline-md font-headline-md uppercase tracking-tight text-text-main">
+            ASME &amp; AWS CERTIFIED QUALITY ASSURANCE
+          </h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[12px] font-label-md uppercase text-secondary">CÓDIGO DE AUDITORÍA:</span>
+<span class="bg-black text-white px-2 py-0.5 font-mono text-[12px]">QA-REG-9001/2024</span>
+</div>
+</div>
+<!-- Badges Rectangulares Sharp Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Sello 1 -->
+<div class="border border-border-accent bg-background p-5 hover:border-primary-container transition-colors">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm uppercase text-text-main">ASME SECTION IX</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified</span>
+</div>
+<div class="text-[12px] font-label-md text-primary font-semibold uppercase mb-2">BOILER &amp; PRESSURE VESSEL CODE</div>
+<p class="text-body-sm font-body-sm text-secondary">
+            Calificación de soldadores y procedimientos para recipientes sometidos a alta presión y calderería pesada.
+          </p>
+<div class="mt-4 pt-3 border-t border-border-accent text-[11px] font-mono text-secondary">
+            STAMP: 'U' &amp; 'R' RATED PROTOCOLS
+          </div>
+</div>
+<!-- Sello 2 -->
+<div class="border border-border-accent bg-background p-5 hover:border-primary-container transition-colors">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm uppercase text-text-main">AWS D1.1 / D1.6</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified</span>
+</div>
+<div class="text-[12px] font-label-md text-primary font-semibold uppercase mb-2">STRUCTURAL WELDING CODE</div>
+<p class="text-body-sm font-body-sm text-secondary">
+            Normativa de soldadura estructural para aceros al carbono y aceros inoxidables en obras civiles e industriales.
+          </p>
+<div class="mt-4 pt-3 border-t border-border-accent text-[11px] font-mono text-secondary">
+            STANDARDS: AWS D1.1 (STEEL) &amp; D1.6 (SS)
+          </div>
+</div>
+<!-- Sello 3 -->
+<div class="border border-border-accent bg-background p-5 hover:border-primary-container transition-colors">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm uppercase text-text-main">ISO 9001:2015</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified</span>
+</div>
+<div class="text-[12px] font-label-md text-primary font-semibold uppercase mb-2">GESTIÓN DE CALIDAD CERTIFICADA</div>
+<p class="text-body-sm font-body-sm text-secondary">
+            Trazabilidad documental total, control de materia prima MTR y calibración sistemática de equipos de taller.
+          </p>
+<div class="mt-4 pt-3 border-t border-border-accent text-[11px] font-mono text-secondary">
+            CERT: QMS-VEN-2024-9001
+          </div>
+</div>
+<!-- Sello 4 -->
+<div class="border border-border-accent bg-background p-5 hover:border-primary-container transition-colors">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm uppercase text-text-main">WPS / PQR HOMOLOGADOS</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified</span>
+</div>
+<div class="text-[12px] font-label-md text-primary font-semibold uppercase mb-2">PROCEDIMIENTOS REGISTRADOS</div>
+<p class="text-body-sm font-body-sm text-secondary">
+            Más de 140 especificaciones de procedimiento de soldadura aprobadas con respaldo de ensayos mecánicos y de doblado.
+          </p>
+<div class="mt-4 pt-3 border-t border-border-accent text-[11px] font-mono text-secondary">
+            WPQR RECORD: ACTIVE ARCHIVE 2024
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- GRID DE SERVICIOS INDUSTRIALES: Bento / Catalog Cards -->
+<section class="w-full border-b border-border-accent bg-background py-16" id="servicios">
+<div class="max-w-[1440px] mx-auto px-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between border-b border-border-accent pb-6 mb-10">
+<div>
+<span class="text-[11px] font-label-md tracking-widest uppercase text-primary-container font-semibold">DIVISIÓN OPERATIVA ESPECIALIZADA</span>
+<h2 class="text-headline-lg font-headline-lg uppercase tracking-tight text-text-main mt-1">
+            CATÁLOGO DE SERVICIOS METALMECÁNICOS
+          </h2>
+</div>
+<p class="text-body-md font-body-md text-secondary max-w-md mt-4 md:mt-0">
+          Operamos bajo rigurosa inspección técnica in-house y en campo, garantizando integridad estructural en ambientes corrosivos y de alta exigencia mecánica.
+        </p>
+</div>
+<!-- Grid 3 Columnas Técnicas Sharp -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- CARD 1: SOLDADURAS ESPECIALES -->
+<div class="border border-border-accent bg-background flex flex-col justify-between hover:border-primary-container transition-colors">
+<div>
+<div class="p-6 border-b border-border-accent bg-surface-container-low flex justify-between items-start">
+<div>
+<span class="text-[10px] font-mono uppercase bg-black text-white px-2 py-0.5">LINEA 01 // ESPECÍFICO</span>
+<h3 class="text-headline-md font-headline-md uppercase text-text-main mt-2">
+                  SOLDADURAS ESPECIALES
+                </h3>
+</div>
+<span class="material-symbols-outlined text-primary-container text-28px">precision_manufacturing</span>
+</div>
+<div class="p-6 space-y-6">
+<!-- Sub-block 1: Procesos -->
+<div>
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  PROCESOS CALIFICADOS
+                </span>
+<div class="flex flex-wrap gap-1.5">
+<span class="border border-border-accent px-2 py-1 text-[11px] font-mono bg-surface-container-lowest">GTAW (TIG)</span>
+<span class="border border-border-accent px-2 py-1 text-[11px] font-mono bg-surface-container-lowest">GMAW (MIG/MAG)</span>
+<span class="border border-border-accent px-2 py-1 text-[11px] font-mono bg-surface-container-lowest">SMAW</span>
+<span class="border border-border-accent px-2 py-1 text-[11px] font-mono bg-surface-container-lowest">FCAW</span>
+<span class="border border-border-accent px-2 py-1 text-[11px] font-mono bg-surface-container-lowest">SAW (ARCO SUMERGIDO)</span>
+</div>
+</div>
+<!-- Sub-block 2: Aleaciones -->
+<div>
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  ALEACIONES Y METALES BASE
+                </span>
+<ul class="text-body-sm font-body-sm text-secondary space-y-1.5">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Aceros inoxidables martensíticos, austeníticos y ferríticos.
+                  </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Aleaciones Dúplex y Súper Dúplex (2205 / 2507).
+                  </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Superaleaciones base Níquel: Inconel 625/718, Monel 400 y Titanio Grado 2.
+                  </li>
+</ul>
+</div>
+<!-- Sub-block 3: NDT -->
+<div class="border-t border-border-accent pt-4">
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  ENSAYOS NO DESTRUCTIVOS (NDT) INCLUIDOS
+                </span>
+<p class="text-body-sm font-body-sm text-secondary">
+                  Inspección visual (VT), Líquidos penetrantes (PT), Partículas magnéticas (MT), Ultrasonido industrial (UT) y Radiografía gamma/rayos X (RT).
+                </p>
+</div>
+</div>
+</div>
+<div class="p-6 border-t border-border-accent bg-surface-container-low flex justify-between items-center">
+<span class="text-[11px] font-mono uppercase text-secondary">APLICACIÓN CRÍTICA PETROQUÍMICA</span>
+<a class="text-label-md font-label-md uppercase text-primary-container font-semibold hover:underline flex items-center gap-1" href="#contacto">
+              COTIZAR LÍNEA 01 <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- CARD 2: MANTENIMIENTO INDUSTRIAL & METALMECÁNICO -->
+<div class="border border-border-accent bg-background flex flex-col justify-between hover:border-primary-container transition-colors">
+<div>
+<div class="p-6 border-b border-border-accent bg-surface-container-low flex justify-between items-start">
+<div>
+<span class="text-[10px] font-mono uppercase bg-black text-white px-2 py-0.5">LINEA 02 // CAMPO &amp; TALLER</span>
+<h3 class="text-headline-md font-headline-md uppercase text-text-main mt-2">
+                  MANTENIMIENTO INDUSTRIAL &amp; METALMECÁNICO
+                </h3>
+</div>
+<span class="material-symbols-outlined text-primary-container text-28px">build_circle</span>
+</div>
+<div class="p-6 space-y-6">
+<!-- Sub-block 1: Servicios -->
+<div>
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  SERVICIOS DE CAMPO &amp; OVERHAUL
+                </span>
+<p class="text-body-sm font-body-sm text-secondary leading-relaxed mb-3">
+                  Paradas de planta programadas, intervención integral de molinos SAG/Bolas, tolvas de descarga pesada, bombas de lodo y recuperación de turbinas.
+                </p>
+<div class="border border-border-accent p-3 bg-surface-container-lowest text-[11px] font-mono text-text-main">
+                  DESPLIEGUE OPERATIVO: CUADRILLAS 24/7 EN SITIO
+                </div>
+</div>
+<!-- Sub-block 2: Revestimientos -->
+<div>
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  RECUPERACIÓN POR REVESTIMIENTO (HARDFACING)
+                </span>
+<ul class="text-body-sm font-body-sm text-secondary space-y-1.5">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Depósitos resistentes a abrasión severa e impacto con carburos de cromo.
+                  </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Balanceo dinámico de rotores y ventiladores industriales in situ.
+                  </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Maquinado portátil: mandrilado, refrentado de bridas y rectificado.
+                  </li>
+</ul>
+</div>
+<!-- Sub-block 3: Logística -->
+<div class="border-t border-border-accent pt-4">
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  TIEMPO DE RESPUESTA A PARADAS
+                </span>
+<p class="text-body-sm font-body-sm text-secondary">
+                  Movilización técnica inmediata con unidades móviles autónomas de soldadura diesel, generadores y equipos NDT de calibración directa.
+                </p>
+</div>
+</div>
+</div>
+<div class="p-6 border-t border-border-accent bg-surface-container-low flex justify-between items-center">
+<span class="text-[11px] font-mono uppercase text-secondary">ATENCIÓN DE EMERGENCIAS</span>
+<a class="text-label-md font-label-md uppercase text-primary-container font-semibold hover:underline flex items-center gap-1" href="#contacto">
+              COTIZAR LÍNEA 02 <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- CARD 3: FABRICACIÓN Y MONTAJE ESTRUCTURAL -->
+<div class="border border-border-accent bg-background flex flex-col justify-between hover:border-primary-container transition-colors">
+<div>
+<div class="p-6 border-b border-border-accent bg-surface-container-low flex justify-between items-start">
+<div>
+<span class="text-[10px] font-mono uppercase bg-black text-white px-2 py-0.5">LINEA 03 // CALDERERÍA PESADA</span>
+<h3 class="text-headline-md font-headline-md uppercase text-text-main mt-2">
+                  FABRICACIÓN Y MONTAJE ESTRUCTURAL
+                </h3>
+</div>
+<span class="material-symbols-outlined text-primary-container text-28px">domain</span>
+</div>
+<div class="p-6 space-y-6">
+<!-- Sub-block 1: Productos -->
+<div>
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  EQUIPOS Y CALDERERÍA
+                </span>
+<ul class="text-body-sm font-body-sm text-secondary space-y-1.5">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Recipientes a presión (Separadores, Acumuladores, Filtros).
+                  </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Tanques de almacenamiento bajo normas API 650 y API 620.
+                  </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container"></span> Sistemas de tuberías de proceso ASME B31.3 y manifolds de alta presión.
+                  </li>
+</ul>
+</div>
+<!-- Sub-block 2: Estructuras -->
+<div>
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  ESTRUCTURAS PESADAS &amp; MONTAJE
+                </span>
+<p class="text-body-sm font-body-sm text-secondary leading-relaxed">
+                  Fabricación de naves industriales, vigas armadas de gran peralte, puentes grúa de taller y torres de proceso con ensamble y torque controlado.
+                </p>
+</div>
+<!-- Sub-block 3: Maquinaria CNC -->
+<div class="border-t border-border-accent pt-4">
+<span class="text-label-md font-label-md uppercase text-text-main block mb-2 font-semibold">
+                  CAPACIDAD DE CONFORMADO
+                </span>
+<p class="text-body-sm font-body-sm text-secondary">
+                  Corte por plasma CNC de alta definición hasta 50 mm, oxicorte para espesores hasta 200 mm, y roladora hidráulica de 4 rodillos para chapas de gran calibre.
+                </p>
+</div>
+</div>
+</div>
+<div class="p-6 border-t border-border-accent bg-surface-container-low flex justify-between items-center">
+<span class="text-[11px] font-mono uppercase text-secondary">ARMADO MILIMÉTRICO</span>
+<a class="text-label-md font-label-md uppercase text-primary-container font-semibold hover:underline flex items-center gap-1" href="#contacto">
+              COTIZAR LÍNEA 03 <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GRID DE AUTORIDAD Y CAPACIDADES DE PLANTA (Data Catalog Table) -->
+<section class="w-full border-b border-border-accent bg-surface-container-low py-16" id="capacidades">
+<div class="max-w-[1440px] mx-auto px-space-xl">
+<div class="mb-8">
+<span class="text-[11px] font-label-md tracking-widest uppercase text-primary-container font-semibold">INFRAESTRUCTURA DE ALTA PRECISIÓN</span>
+<h2 class="text-headline-lg font-headline-lg uppercase tracking-tight text-text-main">
+          ESPECIFICACIONES DE CAPACIDAD DE PLANTA
+        </h2>
+<p class="text-body-md font-body-md text-secondary mt-1">
+          Dimensiones de taller, capacidad nominal de izaje, equipos de laboratorio y certificaciones de personal.
+        </p>
+</div>
+<!-- Industrial Data Table Container -->
+<div class="border border-border-accent bg-background overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-black text-white border-b border-border-accent text-label-md font-label-md uppercase tracking-wider">
+<th class="p-4 border-r border-border-accent/20 w-1/4">ÁREA / PARÁMETRO</th>
+<th class="p-4 border-r border-border-accent/20 w-2/5">ESPECIFICACIÓN TÉCNICA INSTALADA</th>
+<th class="p-4 border-r border-border-accent/20 w-1/5">RANGO OPERATIVO</th>
+<th class="p-4 w-1/6">NORMATIVA DE CONTROL</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-accent text-body-sm font-body-sm text-text-main">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-semibold uppercase border-r border-border-accent bg-surface-container-lowest">
+                Área de Taller Cubierta
+              </td>
+<td class="p-4 border-r border-border-accent text-secondary">
+                6,500 m² de nave industrial techada continua con pisos de concreto reforzado de alta resistencia para ensamblajes pesados.
+              </td>
+<td class="p-4 border-r border-border-accent font-mono text-[13px] font-medium">
+                6,500 m² (Nave A + Nave B)
+              </td>
+<td class="p-4 font-mono text-[12px] text-secondary">
+                Covenin / OSHA Industry
+              </td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-semibold uppercase border-r border-border-accent bg-surface-container-lowest">
+                Capacidad de Izaje
+              </td>
+<td class="p-4 border-r border-border-accent text-secondary">
+                Sistema de puentes grúa dobles con alturas bajo gancho de hasta 12 metros para maniobra segura de recipientes a presión y calderería.
+              </td>
+<td class="p-4 border-r border-border-accent font-mono text-[13px] font-medium text-primary-container">
+                25 Toneladas &amp; 40 Toneladas
+              </td>
+<td class="p-4 font-mono text-[12px] text-secondary">
+                CMAA Class D / ASME B30.2
+              </td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-semibold uppercase border-r border-border-accent bg-surface-container-lowest">
+                Pruebas Hidrostáticas
+              </td>
+<td class="p-4 border-r border-border-accent text-secondary">
+                Banco de pruebas hidrostáticas propio con registradores gráficos digitales Barton y transductores calibrados con trazabilidad.
+              </td>
+<td class="p-4 border-r border-border-accent font-mono text-[13px] font-medium">
+                Hasta 15,000 PSI (1,034 bar)
+              </td>
+<td class="p-4 font-mono text-[12px] text-secondary">
+                ASME Section VIII Div 1 &amp; 2
+              </td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-semibold uppercase border-r border-border-accent bg-surface-container-lowest">
+                Laboratorio NDT &amp; Inspección
+              </td>
+<td class="p-4 border-r border-border-accent text-secondary">
+                Equipos Phased Array Ultrasonic Testing (PAUT), detectores de fallas por corrientes inducidas (Eddy Current) y medidores de espesor de precisión.
+              </td>
+<td class="p-4 border-r border-border-accent font-mono text-[13px] font-medium">
+                Resolución sub-milimétrica
+              </td>
+<td class="p-4 font-mono text-[12px] text-secondary">
+                ASNT SNT-TC-1A Level II/III
+              </td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-semibold uppercase border-r border-border-accent bg-surface-container-lowest">
+                Personal Técnico Homologado
+              </td>
+<td class="p-4 border-r border-border-accent text-secondary">
+                Soldadores codificados con cupones vigentes, inspectores de soldadura certificados (CWI-AWS) y metalurgistas de planta.
+              </td>
+<td class="p-4 border-r border-border-accent font-mono text-[13px] font-medium text-primary-container">
+                Posiciones 6G &amp; 6GR (Tuberías)
+              </td>
+<td class="p-4 font-mono text-[12px] text-secondary">
+                ASME Sec. IX / AWS D1.1
+              </td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 font-semibold uppercase border-r border-border-accent bg-surface-container-lowest">
+                Corte y Rolado de Placas
+              </td>
+<td class="p-4 border-r border-border-accent text-secondary">
+                Mesa de corte CNC Plasma de alta definición y roladora hidráulica de cuatro rodillos de accionamiento sincronizado.
+              </td>
+<td class="p-4 border-r border-border-accent font-mono text-[13px] font-medium">
+                Espesores: 2 mm hasta 75 mm
+              </td>
+<td class="p-4 font-mono text-[12px] text-secondary">
+                ISO 9013 / Calidad Grado 1
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Factory Image Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+<div class="border border-border-accent bg-background p-2">
+<div class="h-44 w-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="A large industrial overhead bridge crane moving heavy steel structural beams inside an expansive manufacturing workshop with high ceilings. Bright natural skylights illuminate clean polished concrete floors marked with yellow safety lines. The setting is clean, orderly, and highly disciplined with crisp metal surfaces and cool grey tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZrVtGK3QoAIt67N955VmEHuTP03RsrT7AhmbVsT2VUjKJUTOS0DEtM9zV_4US6Xl9G-cObscRp3O2rJms6kVq4U7NzcEmEx65I91mVO2NdhQiFOREyeBNBp8ecys14FcNS0Z5yH0N6bDC-S7GygHEVN0FScqauFI1K7oMYwTzWj_Acdsgx8q-KeIDnMbjPH6yOA1a-BOZ_u0fVaAmaB0sUXilBQUoTBsTQAK1If6JqhsZ3kweNksqm4GX0dTyTHD4riilTyuu3YY"/>
+</div>
+<div class="pt-2 text-[11px] font-mono text-secondary flex justify-between">
+<span>PUENTES GRÚA 40T</span>
+<span class="text-text-main font-semibold">BAJO GANCHO 12M</span>
+</div>
+</div>
+<div class="border border-border-accent bg-background p-2">
+<div class="h-44 w-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="High precision CNC plasma cutting machine slicing through a thick industrial steel plate with brilliant electrical sparks and vapor jets. The background shows an organized metal fabrication facility with structural beams and clean digital control panels under cool white industrial illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6hPRkrYxEkb1fll58drREtrpf7_D4hge4H0rSttN4DT0BFSRfGrFQ_Uge-4D7FrTw2s-3mPu8DQnxtSgTJcLlOy2FpHPry2rFq8uOmvYVaby2HP3ixNkkL1RogyIoSH0MZDmjctL2dhKf3sGeLVWzu-P7vlCpAhyPo-vWwhLw4iib53OOBQ8HfL_PJGUmIIIVFBZWGiM3WtJ6uO55hGBjLLVgnLBQhEP_i_9HkTQjOQlzPpZaiap9ObtTX9g03Qw4YCltxIWtSwU"/>
+</div>
+<div class="pt-2 text-[11px] font-mono text-secondary flex justify-between">
+<span>MESA CNC PLASMA</span>
+<span class="text-text-main font-semibold">ALTA DEFINICIÓN 50MM</span>
+</div>
+</div>
+<div class="border border-border-accent bg-background p-2">
+<div class="h-44 w-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="Non-destructive testing inspector using phased array ultrasonic testing equipment on a large cylindrical pressure vessel weld seam. The technician wears professional safety gear and focuses on the digital diagnostic screen showing acoustic wave responses. Crisp lighting and monochromatic industrial atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWiqYj90BP0hIm4n46JHMnYZSsjlK7kKmxUYjYqPlRbEn3DyJJ267YYHoyo28yRZJkfXp64xPJWC6tBPNMWfU88Jky2a4SPuu5ci2x8ttfbbIYS0lELOi6-d-o4uf0U131elp-5pqeQ01Iw2qmURKrvCMxBkZLTRUq3rNdPb8ZENrFG6aPKc1BcwwWfEktdJdHZn1lILQnSn6u6sVS8zT_-Tc-6ghuee24O3QQ9_qBglc9jGqrhrGAt5lO9HcyrbKVmD_oP7-ts7Q"/>
+</div>
+<div class="pt-2 text-[11px] font-mono text-secondary flex justify-between">
+<span>LABORATORIO NDT</span>
+<span class="text-text-main font-semibold">PHASED ARRAY UT</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MÓDULO DE CONTACTO Y SOLICITUD B2B (RFQ) -->
+<section class="w-full border-b border-border-accent bg-background py-16" id="contacto">
+<div class="max-w-[1440px] mx-auto px-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left: Formulario RFQ B2B -->
+<div class="lg:col-span-7 border border-border-accent bg-background p-8 md:p-10">
+<div class="border-b border-border-accent pb-6 mb-8">
+<span class="text-[11px] font-label-md tracking-widest uppercase text-primary-container font-semibold">FORMULARIO TÉCNICO B2B</span>
+<h2 class="text-headline-lg font-headline-lg uppercase tracking-tight text-text-main mt-1">
+              SOLICITAR COTIZACIÓN &amp; REQUERIMIENTO TÉCNICO (RFQ)
+            </h2>
+<p class="text-body-sm font-body-sm text-secondary mt-2">
+              Complete los parámetros operativos de su proyecto. Nuestro departamento de ingeniería de costos responderá con un dictamen preliminar en menos de 24 horas.
+            </p>
+</div>
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Requerimiento técnico recibido en Departamento de Ingeniería de Costos FAMESA C.A.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Field: Empresa -->
+<div>
+<label class="block text-label-md font-label-md uppercase text-text-main mb-2">
+                  EMPRESA / RAZÓN SOCIAL *
+                </label>
+<input class="w-full border border-border-accent bg-surface-container-lowest px-4 py-3 text-body-md font-body-md text-text-main focus:border-primary-container focus:ring-0 focus:outline-none placeholder:text-secondary-fixed-dim" placeholder="Ej. Consorcio Petrolero del Caribe" required="" type="text"/>
+</div>
+<!-- Field: Correo -->
+<div>
+<label class="block text-label-md font-label-md uppercase text-text-main mb-2">
+                  CORREO CORPORATIVO *
+                </label>
+<input class="w-full border border-border-accent bg-surface-container-lowest px-4 py-3 text-body-md font-body-md text-text-main focus:border-primary-container focus:ring-0 focus:outline-none placeholder:text-secondary-fixed-dim" placeholder="procura@empresa.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Field: Tipo de Servicio -->
+<div>
+<label class="block text-label-md font-label-md uppercase text-text-main mb-2">
+                  TIPO DE SERVICIO REQUERIDO *
+                </label>
+<select class="w-full border border-border-accent bg-surface-container-lowest px-4 py-3 text-body-md font-body-md text-text-main focus:border-primary-container focus:ring-0 focus:outline-none">
+<option>Soldaduras Especiales (Aleaciones / Inconel / Titanio)</option>
+<option>Fabricación de Recipientes a Presión (ASME Sec. VIII)</option>
+<option>Tanques de Almacenamiento (API 650/620)</option>
+<option>Mantenimiento y Parada de Planta 24/7</option>
+<option>Estructuras Metálicas Pesadas y Puentes Grúa</option>
+<option>Servicio de Ensayos No Destructivos (NDT Level II/III)</option>
+</select>
+</div>
+<!-- Field: Norma Técnica -->
+<div>
+<label class="block text-label-md font-label-md uppercase text-text-main mb-2">
+                  NORMA TÉCNICA APLICABLE
+                </label>
+<input class="w-full border border-border-accent bg-surface-container-lowest px-4 py-3 text-body-md font-body-md text-text-main focus:border-primary-container focus:ring-0 focus:outline-none placeholder:text-secondary-fixed-dim" placeholder="Ej. ASME Sec. IX / AWS D1.1 / API 650" type="text"/>
+</div>
+</div>
+<!-- Field: Detalles de la Especificación -->
+<div>
+<label class="block text-label-md font-label-md uppercase text-text-main mb-2">
+                DESCRIPCIÓN DE ESPECIFICACIONES / ALCANCE
+              </label>
+<textarea class="w-full border border-border-accent bg-surface-container-lowest px-4 py-3 text-body-md font-body-md text-text-main focus:border-primary-container focus:ring-0 focus:outline-none placeholder:text-secondary-fixed-dim" placeholder="Indique espesores, tipo de metal base, fluido de trabajo, presiones de diseño o fechas estimadas de parada..." rows="4"></textarea>
+</div>
+<!-- Field: Adjuntar Archivo -->
+<div class="border border-dashed border-border-accent p-4 bg-surface-container-low">
+<label class="block text-label-md font-label-md uppercase text-text-main mb-1">
+                ADJUNTAR ESPECIFICACIÓN O PLANO (PDF / DWG / STEP)
+              </label>
+<div class="flex items-center gap-3 mt-2">
+<input class="text-body-sm font-body-sm text-secondary file:border file:border-border-accent file:bg-white file:px-3 file:py-1.5 file:text-label-md file:uppercase file:cursor-pointer hover:file:bg-surface-container-lowest" type="file"/>
+</div>
+<span class="block text-[11px] font-mono text-secondary mt-2">
+                LÍMITE MÁXIMO: 50MB. ACUERDO DE CONFIDENCIALIDAD (NDA) APLICABLE AUTOMÁTICAMENTE.
+              </span>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 bg-primary-container text-white font-label-md text-label-md uppercase tracking-wider font-semibold hover:bg-primary transition-colors flex items-center justify-center gap-3" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>ENVIAR REQUERIMIENTO TÉCNICO</span>
+</button>
+</form>
+</div>
+<!-- Right: Panel de Gerencia de Operaciones y Contacto Directo -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+<div class="border border-border-accent bg-background p-8">
+<div class="border-b border-border-accent pb-4 mb-6">
+<span class="text-[11px] font-label-md tracking-widest uppercase text-primary-container font-semibold">GERENCIA DE OPERACIONES</span>
+<h3 class="text-headline-md font-headline-md uppercase text-text-main mt-1">
+                PLANTA &amp; SEDE INDUSTRIAL
+              </h3>
+</div>
+<div class="space-y-6 text-body-sm font-body-sm">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-[22px] mt-0.5">location_on</span>
+<div>
+<span class="font-label-md text-label-md uppercase text-text-main block">INSTALACIONES PRINCIPALES</span>
+<p class="text-secondary mt-1">
+                    Zona Industrial Carabobo, Transversal 3, Parcela 88.<br/>
+                    Valencia, Estado Carabobo, Venezuela.
+                  </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-[22px] mt-0.5">call</span>
+<div>
+<span class="font-label-md text-label-md uppercase text-text-main block">LÍNEAS DIRECTAS DE PLANTA</span>
+<p class="text-secondary mt-1 font-mono">
+                    Central: +58 (241) 871-9200<br/>
+                    Emergencias 24/7: +58 (414) 340-8812
+                  </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-container text-[22px] mt-0.5">mail</span>
+<div>
+<span class="font-label-md text-label-md uppercase text-text-main block">DEPARTAMENTO DE COTIZACIONES</span>
+<p class="text-secondary mt-1 font-mono">
+                    ingenieria@famesa.com.ve<br/>
+                    procura@famesa.com.ve
+                  </p>
+</div>
+</div>
+</div>
+<!-- Direct Technical Support Badge -->
+<div class="mt-8 p-4 border border-border-accent bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary-container font-semibold text-label-md font-label-md uppercase">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+                ATENCIÓN TÉCNICA A CONTRATISTAS
+              </div>
+<p class="text-body-sm font-body-sm text-secondary mt-1">
+                Disponibilidad de inspectores CWI-AWS para homologación y validación de planes de inspección y prueba (ITP).
+              </p>
+</div>
+</div>
+<!-- Technical Dossier Download Widget -->
+<div class="border border-border-accent bg-black text-white p-8">
+<span class="text-[11px] font-mono tracking-widest text-primary-fixed uppercase">DOCUMENTACIÓN DISPONIBLE</span>
+<h4 class="text-headline-sm font-headline-sm uppercase mt-1 mb-3">
+              DOSSIER DE CALIDAD &amp; ESPECIFICACIONES 2024
+            </h4>
+<p class="text-body-sm font-body-sm text-surface-container-highest mb-6">
+              Incluye listado de procedimientos WPS homologados, matriz de calificaciones de soldadores y alcance de acreditaciones NDT.
+            </p>
+<a class="w-full py-3 bg-white text-black font-label-md text-label-md uppercase tracking-wider font-semibold flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors" href="#descarga">
+<span class="material-symbols-outlined text-[18px] text-primary-container">picture_as_pdf</span>
+              DESCARGAR ARCHIVO TÉCNICO (PDF 18.4 MB)
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COMPONENT: Footer (from Shared Components JSON) -->
+<footer class="w-full border-t border-border-accent dark:border-border-accent px-space-xl py-space-lg flex flex-col md:flex-row justify-between items-center gap-space-md bg-background">
+<!-- Brand / Copyright -->
+<div class="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+<span class="text-headline-sm font-headline-sm tracking-widest text-text-main font-bold">
+        FAMESA C.A.
+      </span>
+<span class="hidden md:inline text-secondary">|</span>
+<span class="text-body-sm font-body-sm tracking-normal uppercase text-secondary">
+        © 2024 FAMESA C.A. - INGENIERÍA METALMECÁNICA &amp; SOLDADURAS ESPECIALES. TODOS LOS DERECHOS RESERVADOS.
+      </span>
+</div>
+<!-- Mandatory Links from JSON -->
+<div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-body-sm font-body-sm tracking-normal uppercase">
+<a class="text-secondary hover:text-primary-container transition-colors duration-150" href="#catalogo">
+        DESCARGAR CATÁLOGO TÉCNICO (PDF)
+      </a>
+<a class="text-secondary hover:text-primary-container transition-colors duration-150" href="#certificaciones">
+        CERTIFICACIÓN ASME &amp; AWS
+      </a>
+<a class="text-secondary hover:text-primary-container transition-colors duration-150" href="#calidad">
+        POLÍTICA DE CALIDAD &amp; NDT
+      </a>
+<a class="text-secondary hover:text-primary-container transition-colors duration-150" href="#capacidades">
+        ESPECIFICACIONES DE PLANTA
+      </a>
+<a class="text-secondary hover:text-primary-container transition-colors duration-150" href="#legal">
+        AVISO LEGAL
+      </a>
+</div>
+</footer>
+</body></html>
