@@ -180,6 +180,11 @@
 </nav>
 <!-- Trailing Actions Cluster -->
 <div class="flex items-center gap-space-md">
+
+        <button id="menu-btn" class="flex lg:hidden p-2 text-primary-container border border-border-accent bg-surface-container-low focus:outline-none">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+
 <a class="hidden sm:flex items-center gap-1.5 px-3 py-2 border border-border-accent hover:bg-surface-container-low transition-colors text-label-md font-label-md uppercase text-secondary" href="#catalogo-pdf">
 <span class="material-symbols-outlined text-[16px] text-primary-container">picture_as_pdf</span>
 <span class="hidden xl:inline">DOSSIER</span>
@@ -891,5 +896,36 @@
 </a>
 
 <script type="module" src="/src/main.ts"></script>
+
+<!-- Mobile Sidebar -->
+<div id="sidebar-backdrop" class="fixed inset-0 bg-black/60 z-40 hidden opacity-0 transition-opacity duration-300"></div>
+<aside id="sidebar-menu" class="fixed top-0 left-0 h-full w-64 bg-background shadow-2xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col border-r border-border-accent">
+    <div class="p-6 border-b border-border-accent flex justify-between items-center bg-surface-container-low">
+        <span class="font-headline-md text-headline-md uppercase font-bold text-primary-container">MENÚ</span>
+        <button id="close-menu-btn" class="text-text-main p-1 focus:outline-none">
+            <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+    </div>
+    <nav class="flex flex-col p-4 gap-2">
+        
+<a class="text-primary-container border-b-2 border-primary-container font-semibold py-3 border-b border-border-accent text-label-md font-label-md uppercase tracking-tight" href="#servicios">
+        SERVICIOS
+      </a>
+<a class="text-text-main py-3 border-b border-border-accent hover:text-primary-container transition-colors text-label-md font-label-md uppercase tracking-tight" href="#certificaciones">
+        CERTIFICACIONES
+      </a>
+<a class="text-text-main py-3 border-b border-border-accent hover:text-primary-container transition-colors text-label-md font-label-md uppercase tracking-tight" href="#capacidades">
+        CAPACIDADES
+      </a>
+<a class="text-text-main py-3 border-b border-border-accent hover:text-primary-container transition-colors text-label-md font-label-md uppercase tracking-tight" href="#catalogo">
+        CATÁLOGO
+      </a>
+<a class="text-text-main py-3 border-b border-border-accent hover:text-primary-container transition-colors text-label-md font-label-md uppercase tracking-tight" href="#contacto">
+        CONTACTO
+      </a>
+
+    </nav>
+</aside>
+
 </body>
 </html>

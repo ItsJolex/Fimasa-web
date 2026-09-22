@@ -1,38 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('flex');
-        });
+    // Sidebar Mobile Logic
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const sidebar = document.getElementById('sidebar-menu');
+    const backdrop = document.getElementById('sidebar-backdrop');
+    
+    function toggleMenu() {
+        if (!sidebar || !backdrop) return;
         
-        // Cierra el menú al hacer clic en un enlace (móvil)
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth < 1024) { // lg breakpoint
-                    mobileMenu.classList.add('hidden');
-                    mobileMenu.classList.remove('flex');
-                }
-            });
-        });
+        const isOpen = !sidebar.classList.contains('-translate-x-full');
+        
+        if (isOpen) {
+            // Close
+            sidebar.classList.add('-translate-x-full');
+            backdrop.classList.remove('opacity-100');
+            backdrop.classList.add('opacity-0');
+            setTimeout(() => backdrop.classList.add('hidden'), 300);
+        } else {
+            // Open
+            backdrop.classList.remove('hidden');
+            setTimeout(() => {
+                backdrop.classList.remove('opacity-0');
+                backdrop.classList.add('opacity-100');
+                sidebar.classList.remove('-translate-x-full');
+            }, 10);
+        }
     }
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if(targetId === '#' || !targetId) return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+    if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+    if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+    if (backdrop) backdrop.addEventListener('click', toggleMenu);
+    
+    // Cerrar al clickear un enlace en móvil
+    const sidebarLinks = document.querySelectorAll('#sidebar-menu a');
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMenu();
         });
     });
 
